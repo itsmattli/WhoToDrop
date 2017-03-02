@@ -75,6 +75,9 @@ function populate_comment($comment) {
 	$commenttext = $comment['comment'];
 	$commentid = $comment['comment_id'];
 	$avatar = $comment['avatar'];
+	if(empty($avatar)) {
+		$avatar = "https://f4.bcbits.com/img/a3283728899_10.jpg";
+	}
 	echo   "<div class='row' id='$commentid'>
 				<div class='col-sm-1 col-sm-offset-2'>
 					<div class='thumbnail'>
@@ -169,7 +172,7 @@ if (!isset($_SESSION['loggedin'])) {
 		echo "</script>";
 
 		if(empty($post['description'])) {
-			$description = "No comment added";
+			$description = "No Description Added";
 		} else {
 			$description = $post['description'];
 		}
