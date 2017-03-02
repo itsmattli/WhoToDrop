@@ -1,0 +1,337 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    background-color: black;
+
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+input {
+    color: #000000;
+}
+
+@media (min-width: 768px) {
+    p {
+        margin: 0 0 35px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
+
+.spacer
+{
+    width: 100%;
+    height: 50px;
+}
+
+a {
+    color: #42DCA3;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #1d9b6c;
+}
+.light {
+    font-weight: 400;
+}
+.navbar-custom {
+    position: fixed;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: black;
+}
+.navbar-custom .navbar-toggle {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 12px;
+}
+
+
+.navbar-custom .navbar-toggle:focus,
+.navbar-custom .navbar-toggle:active {
+    outline: none;
+}
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+}
+.navbar-custom .navbar-brand:focus {
+    outline: none;
+}
+.navbar-custom a {
+    color: white;
+}
+.navbar-custom .nav li a {
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+.navbar-custom .nav li a:hover {
+    color: rgba(255, 255, 255, 0.8);
+    outline: none;
+    background-color: transparent;
+}
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: none;
+    background-color: transparent;
+}
+.navbar-custom .nav li.active a {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.navbar-custom .nav li.active a:hover {
+    color: white;
+}
+
+#commentForm{
+    width:500px;
+}
+#commentForm label{
+    width:250px;
+}
+#commentForm label.error,
+#commentForm input.submit{
+    margin-left:253px;
+}
+#signupForm{
+    width:670px;
+}
+#signupForm label.error{
+    margin-left:100px;
+    width:auto;
+    display:inline;
+}
+
+#versus img {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+@media screen and (max-width:991px) {  
+    #versus {
+        width: 25%;
+        margin: auto;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
+
+.player-img {
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+.form-div{
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.comment-text {
+    color: black;
+}
+
+#sort-order {
+    color: black;
+}
+
+#player1, #player2 {
+    text-align: center;
+}
+
+.profile {
+    color:black;
+}
+
+#score {
+    color:black;
+}
+
+.result-table {
+    overflow-x:auto;
+    min-width: 100%;
+}
+
+.result-table table {
+    white-space: nowrap;
+}
+
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: white;
+    color: black;
+}
+
+.voting {
+    display:inline;
+}
+
+strong {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.modal-dialog {
+    color: black;
+}
+
+.modal-dialog label {
+    text-align: right;
+}
+
+.modal-header {
+    background: #d9edf7;
+    color: #31708f;
+}
+
+#description {
+    font-size: 14px;
+}
+
+.intro {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0;
+    text-align: center;
+    color: #000;
+    text-shadow: #fff 0px 0px 10px;
+    -webkit-font-smoothing: antialiased; 
+    background: url('/WhoToDrop/images/header.jpg') no-repeat bottom center scroll;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#step1, #step2, #step3 {
+    display: table;
+    max-width: 100%;
+    width: auto;
+    height: 100vh;
+    padding: 100px 0;
+    text-align: center;
+    color: #ffffff;
+    background-color: black;
+}
+
+.intro .intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+.intro .intro-body .brand-heading {
+  font-size: 40px;
+  white-space: nowrap;
+}
+.intro .intro-body .intro-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    height: 100%;
+    padding: 0;
+  }
+  .intro .intro-body .brand-heading {
+    font-size: 100px;
+  }
+  .intro .intro-body .intro-text {
+    font-size: 26px;
+  }
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    font-size: 75px;
+        color: #ffffff;
+    text-shadow: #000000 0px 0px 10px;
+    -webkit-font-smoothing: antialiased;
+    background: transparent;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: none;
+    color: red;
+}
+
+.btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+.how-to img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.userphoto img  {
+    width: 300px;
+}
+
+@media screen and (max-width:775px) {  
+.thumbnail {
+    display: none;
+  }
+}
+
+@media screen and (max-width:400px) {  
+    .buttons-span {
+        display: block;
+    }
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+
+
