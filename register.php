@@ -103,7 +103,7 @@ if(isset($_SESSION['loggedin'])) {
 		    	<div class='form-group'>
 				    <label for='email' class='col-md-4 col-md-offset-2 col-form-label'><b>Email</b></label>
 				    <div class='col-md-6'>
-					    <input class='form-control' type='email' placeholder='Enter Password' name='email'>
+					    <input class='form-control' type='email' placeholder='Enter Email' name='email'>
 					    <br />
 					</div>
 		    	</div>
